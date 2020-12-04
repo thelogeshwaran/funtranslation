@@ -1,5 +1,63 @@
+
+
+@font-face{
+    font-family: myFont;
+    src: url(PAPYRUS.TTF);
+}
+
+
+body{
+    background-image: url(/images/avatar.png);
+   
+    padding-top:2%;
+    padding-left: 2%;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.header{
+    color:#2563EB;
+    font-family: myFont;
+    font-weight: bold;
+
+}
+
+#inputTxt{
+    margin-bottom:2%;
+    width:30%;
+    min-height:12vh ;
+    padding:1rem;  
+    display: block;
+    font-family: myFont;
+    font-size:1rem;
+}
+
+#button{
+    text-align: center;
+    background-color:#5CE4EB;
+    padding: 1rem 2rem;
+    margin:2% 0%;
+    border:none;
+    font-family: myFont;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
 #outputTxt{
     height: 12vh;
-    width: 400px;
+    width: 30%;
     border : 2px solid black ;
+    background-color: white;
+    padding: 1%;
+    margin-top:2%;
+    font-family: myFont;
+}
+
+.about{
+    color:white;
+    font-family: myFont;
+    padding-top:1%;
+
 }
