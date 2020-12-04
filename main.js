@@ -14,19 +14,22 @@ function getUrl(txtFrurl){
 
 function clickHandler(){
 
-    var inputval = input.value
+    var inputval = input.value;
 
     fetch(getUrl(inputval))
-    .then(response => response.json())
-    .then(json => { 
-        var transltdTxt = json.contents.translated
-        output.innerText = transltdTxt;
-    })
-    .catch(errorHandler)
+        .then(response => response.json())
+        .then(json => {
+            var translatedText = json.contents.translated;
+            output.innerText = translatedText; 
+           })
+        .catch(errorHandler)
+};
+
+
     
 
 
-}
+
 
 function errorHandler(error){
     console.log(error)
